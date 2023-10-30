@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+	      name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link rel="stylesheet" type="text/css" href="estiloc.css">
+	<meta name="theme-color" content="#000000" />
+	<meta
+			name="description"
+			content="Web site created using create-react-app"
+	/>
+
+
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+	<title>Azqueltán | Contacto</title>
+</head>
+<body>
+	<div class="maintitle">
+		<img height="70" src="pag1/logo.jpg" width="100"/>
+	</div>
+	<br/>
+	<h1>Comunidad Indígena de San Lorenzo de Azqueltán</h1>
+
+	<nav class="menu">
+		<br/>
+		<a href="index.html">Inicio</a>
+		<a href="historia.html">Historia</a>
+		<a href="lucha.html">Nuestra lucha</a>
+		<a href="comunicados.html">Comunicados recientes</a>
+		<a href="contacto.html"> Contacto</a>
+		<br/>
+		<br/>
+		<br/>
+	</nav>
+
+	<div id="formContainer">
+		<h1>Contacto</h1>
+		<p>¡Ponte en contacto con nosotros! Deja tus mensajes, comentarios y preguntas.</p>
+
+		<form id="contactForm" method="post">
+			<label for="correo">Correo Electrónico</label>
+			<input type="email" name="correo" id="correo" placeholder="correo@gmail.com" required>
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre" required>
+			<label for="mensaje">Mensaje:</label>
+			<input type="text" name="mensaje" id="mensaje" required>
+			<input type="button" value="Enviar" onclick="mostrarDatos()">
+
+		</form>
+	</div>
+
+
+
+	<div id="mensajeEnviado" class="hidden">
+		<h2>Mensaje Enviado</h2>
+		<p>Gracias por ponerte en contacto con nosotros. Tu mensaje ha sido recibido.</p>
+		<br>
+		<p>Datos:</p>
+		<p id="nombreMostrado"></p>
+		<p id="emailMostrado"></p>
+		<p id="mensajeMostrado"></p>
+	</div>
+
+	<br>
+	<br>
+	<footer class="pie">
+		Comunidad Indígena de San Lorenzo de Azqueltán. Todos los derechos reservados @2023
+
+	</footer>
+
+	<br/>
+	<br/>
+
+	</div>
+
+	<script>
+        function mostrarDatos() {
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("correo").value; // Corrige el id del campo de correo
+            var mensaje = document.getElementById("mensaje").value;
+            var formContainer = document.getElementById("formContainer");
+
+            var mensajeEnviado = document.getElementById("mensajeEnviado");
+            var nombreMostrado = document.getElementById("nombreMostrado");
+            var emailMostrado = document.getElementById("emailMostrado");
+            var mensajeMostrado = document.getElementById("mensajeMostrado");
+
+            nombreMostrado.textContent = "Nombre: " + nombre;
+            emailMostrado.textContent = "Correo Electrónico: " + email;
+            mensajeMostrado.textContent = "Mensaje: " + mensaje;
+
+            mensajeEnviado.style.display = "block";
+            formContainer.style.display = "none";
+        }
+	</script>
+</body>
+</html>

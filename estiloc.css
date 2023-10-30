@@ -1,0 +1,146 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.backcolor{
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    background-size:cover;
+    background-position:cover;
+
+
+}
+h1{
+    text-align:center;
+    font-size: 40px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+h2 {
+    text-align:center;
+    font-size: 30px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+p{
+    text-align:center;
+    font-size: 18px ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+
+}
+.maintitle{
+
+    font-size: 20px ;
+    margin: 30px 0 0 0;
+    color: black;
+    text-align:center;
+
+
+}
+
+.subt{
+
+    font-size: 10px ;
+    margin: 30px 0 0 0;
+    color: black;
+    text-align: center;
+}
+
+
+.menu {
+    box-sizing: border-box;
+    margin: 0;
+}
+.menu a {
+    background-color: rgb(227, 131, 150);
+    color:rgb(21, 21, 21);
+    text-decoration: none;
+    float: left;
+    width: 14%;
+    text-align: center;
+    font-family: bold;
+    padding: 10pt;
+    margin-left: 35px;
+}
+.menu a:hover {
+    background-color: rgb(193, 193, 168);
+    color: rgb(27, 26, 27);
+    text-decoration: none;
+}
+
+.imagen{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    object-fit: contain;
+    margin-right: 25pt;
+    margin-bottom:30pt;
+    margin-left: 280pt;
+
+
+}
+
+.pie{
+    text-align:center;
+    font-size: 10px ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Contacto */
+/* Estilo para el formulario de contacto */
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="button"] {
+    background-color: rgb(227, 131, 150);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #ff7b8b;
+}
+
+.hidden {
+    display: none;
+}
+
